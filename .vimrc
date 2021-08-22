@@ -61,3 +61,6 @@ set noswapfile
 
 " beep音を抑止する
 set belloff=all
+
+" Ctrl + Space でnullが挿入されないようにする（WSLの時に必要）
+" imap <Nul> <Nop>
