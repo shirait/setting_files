@@ -46,7 +46,7 @@ set nocompatible
 " バックスペースで削除できる文字を追加
 set backspace=start,eol,indent
 
-" 
+" 行頭で左を押すと前の行末に飛ぶ。行末で右を押すと次行頭に飛ぶ。
 set whichwrap=b,s,[,],<,>,~
 
 "タブ、空白、改行の可視化
@@ -59,8 +59,11 @@ set autoread
 " スワップファイルを作成しない
 set noswapfile
 
-" beep音を抑止する
+" beep音を抑止する（vimのバージョン7.4.793以降で有効。それ以前の場合はコメント化する。）
 set belloff=all
 
 " Ctrl + Space でnullが挿入されないようにする（WSLの時に必要）
 " imap <Nul> <Nop>
+
+" 右クリックでペースト試行時にVisual Modeになることを防ぐ（ラズベリーパイのときに必要）
+" set mouse-=a
