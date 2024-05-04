@@ -64,3 +64,6 @@ set belloff=all
 
 " Ctrl + Space でnullが挿入されないようにする（WSLの時に必要）
 " imap <Nul> <Nop>
+
+" 右クリックでペースト試行時にVisual Modeになることを防ぐ（ラズベリーパイのときに必要）
+" set mouse-=a
